@@ -38,15 +38,17 @@ const Projects = () => {
       githubUrl: "https://github.com/perarulalan15/Image-to-Audio-Converter-Extract-and-Read-Text-Aloud",
       highlights: ["Accurate OCR with vision-language model", "Seamless Text-to-Speech for real-time audio output.", "Accessibility-focused aiding visually impaired and language learners."]
     },
-    // {
-    //   title: "Real-time Collaboration Platform",
-    //   description: "A modern collaboration tool featuring real-time document editing, video conferencing, and project management. Built for teams working remotely with advanced security features.",
-    //   tech: ["TypeScript", "Node.js", "Socket.io", "MongoDB", "WebRTC"],
-    //   image: "bg-gradient-to-br from-purple-400 to-pink-500",
-    //   demoUrl: "#",
-    //   githubUrl: "#",
-    //   highlights: ["Real-time collaboration", "End-to-end encryption", "Video conferencing"]
-    // }
+    {
+      title: "SecureBank - Full-Stack Banking Application",
+      description: ["A feature-rich banking application demonstrating full-stack development skills with secure authentication", 
+                  "transaction management, and real-time balance updates. Showcases RESTful API design", 
+                  "session management, and modern React frontend integration."],
+      tech: ["Java", "Spring Boot", "React.js", "JPA/Hibernate", "PostgreSQL", "REST API"],
+      image: "bg-gradient-to-br from-blue-500 to-purple-600",
+      demoUrl: "#",
+      githubUrl: "#",
+      highlights: ["Full-stack development", "Secure session management", "RESTful API architecture", "Modern React UI/UX"]
+    }
   ];
 
   return (
