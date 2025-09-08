@@ -45,8 +45,8 @@ const Projects = () => {
                   "session management, and modern React frontend integration."],
       tech: ["Java", "Spring Boot", "React.js", "JPA/Hibernate", "PostgreSQL", "REST API"],
       image: "bg-gradient-to-br from-blue-500 to-purple-600",
-      demoUrl: "#",
-      githubUrl: "#",
+      demoUrl: "https://github.com/perarulalan15/Bank-System-using-Springboot?tab=readme-ov-file",
+      githubUrl: "https://github.com/perarulalan15/Bank-System-using-Springboot",
       highlights: ["Full-stack development", "Secure session management", "RESTful API architecture", "Modern React UI/UX"]
     }
   ];
