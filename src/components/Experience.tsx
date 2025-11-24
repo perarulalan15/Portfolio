@@ -18,11 +18,11 @@ const Experience = () => {
     },
   ];
 
-  const stats = [
-    { number: "4+", label: "Professional Projects", icon: <TrendingUp className="w-5 h-5" /> },
-    { number: "1", label: "Internships Completed", icon: <Calendar className="w-5 h-5" /> },
-    { number: "10+", label: "Technologies Mastered", icon: <MapPin className="w-5 h-5" /> }
-  ];
+  // const stats = [
+  //   { number: "4+", label: "Professional Projects", icon: <TrendingUp className="w-5 h-5" /> },
+  //   { number: "1", label: "Internships Completed", icon: <Calendar className="w-5 h-5" /> },
+  //   { number: "10+", label: "Technologies Mastered", icon: <MapPin className="w-5 h-5" /> }
+  // ];
 
   return (
     <section id="experience" className="section-padding bg-muted/30">

@@ -30,6 +30,16 @@ const Skills = () => {
       ]
     },
     {
+      title: "Generative AI & LLM Ecosystem",
+      icon: <Brain className="w-6 h-6" />,
+      skills: [
+        { name: "LLMs", level: 85, color: "bg-orange-600" },
+        { name: "LangChain", level: 75, color: "bg-red-500" },
+        { name: "Transformers / HuggingFace", level: 80, color: "bg-yellow-600" },
+        { name: "Vector Databases", level: 60, color: "bg-yellow-600" },
+      ]
+    },
+    {
       title: "Backend Development",
       icon: <Server className="w-6 h-6" />,
       skills: [
