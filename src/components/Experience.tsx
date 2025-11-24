@@ -36,7 +36,7 @@ const Experience = () => {
           </p>
         </div>
 
-        {/* Stats */}
+        {/* Stats
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div
@@ -53,7 +53,7 @@ const Experience = () => {
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Experience Timeline */}
         <div className="max-w-4xl mx-auto">
