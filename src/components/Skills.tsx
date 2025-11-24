@@ -24,7 +24,7 @@ const Skills = () => {
       title: "AI & Machine Learning",
       icon: <Brain className="w-6 h-6" />,
       skills: [
-        { name: "Computer Vision", level: 80, color: "bg-orange-600" },
+        { name: "NLP", level: 90, color: "bg-orange-600" },
         { name: "PyTorch", level: 75, color: "bg-red-500" },
         { name: "Scikit-learn", level: 70, color: "bg-yellow-600" },
       ]
