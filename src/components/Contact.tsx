@@ -1,51 +1,16 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, Download } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, Download } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    // In a real implementation, you would send this data to your backend
-  };
-
-  const handleResumeDownload = () => {
-    // This would typically link to an actual PDF file
-    console.log('Resume download requested');
-    // In a real implementation: window.open('/path-to-resume.pdf', '_blank');
-  };
-
   const contactInfo = [
     {
-      icon: <Mail className="w-5 h-5" />,
+      icon: <Mail className="w-5 h-5" />, 
       label: "Email",
       value: "perarulalan01@gmail.com",
       href: "mailto:perarulalan01@gmail.com"
     },
-    // {
-    //   icon: <Phone className="w-5 h-5" />,
-    //   label: "Phone",
-    //   value: "+1 (555) 123-4567",
-    //   href: "tel:+15551234567"
-    // },
     {
-      icon: <MapPin className="w-5 h-5" />,
+      icon: <MapPin className="w-5 h-5" />, 
       label: "Location",
       value: "Trichy, India",
       href: "#"
@@ -54,19 +19,19 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: <Github className="w-6 h-6" />,
+      icon: <Github className="w-6 h-6" />, 
       label: "GitHub",
       href: "https://github.com/perarulalan15",
       color: "hover:text-gray-700"
     },
     {
-      icon: <Linkedin className="w-6 h-6" />,
+      icon: <Linkedin className="w-6 h-6" />, 
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/perarulalan-v/",
       color: "hover:text-blue-600"
     },
     {
-      icon: <Mail className="w-6 h-6" />,
+      icon: <Mail className="w-6 h-6" />, 
       label: "Email",
       href: "mailto:perarulalan01@gmail.com",
       color: "hover:text-red-500"
@@ -81,18 +46,16 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to discuss opportunities or collaborate on exciting projects? 
-            I'd love to hear from you.
+            Ready to discuss opportunities or collaborate on exciting projects? I'd love to hear from you.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Info */}
+        <div className="flex justify-center">
           <div className="animate-slide-up">
-            <h3 className="font-heading font-bold text-2xl mb-8 text-foreground">
+            <h3 className="font-heading font-bold text-2xl mb-8 text-foreground text-center">
               Let's Connect
             </h3>
-            
+
             {/* Contact Information */}
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
@@ -150,90 +113,6 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="card-elegant">
-              <h3 className="font-heading font-bold text-2xl mb-6 text-foreground">
-                Send a Message
-              </h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="What's this about?"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
-                    placeholder="Tell me about your project, opportunity, or just say hello!"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn-primary w-full flex items-center justify-center gap-2"
-                >
-                  <Send size={18} />
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
         </div>
