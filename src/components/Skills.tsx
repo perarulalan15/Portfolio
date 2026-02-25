@@ -36,14 +36,15 @@ const Skills = () => {
         { name: "LLMs", level: 85, color: "bg-orange-600" },
         { name: "LangChain", level: 75, color: "bg-red-500" },
         { name: "Transformers / HuggingFace", level: 80, color: "bg-yellow-600" },
-        { name: "Vector Databases", level: 60, color: "bg-yellow-600" },
+        { name: "Vector Databases", level: 80, color: "bg-yellow-600" },
+        { name: "RAG Systems", level: 85, color: "bg-amber-600" },
       ]
     },
     {
       title: "Backend Development",
       icon: <Server className="w-6 h-6" />,
       skills: [
-        { name: "Spring Boot", level: 85, color: "bg-green-600" },
+        { name: "Spring Boot", level: 65, color: "bg-green-600" },
         { name: "REST APIs", level: 90, color: "bg-blue-500" },
         { name: "Microservices", level: 75, color: "bg-purple-500" }
       ]

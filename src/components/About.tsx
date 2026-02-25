@@ -32,8 +32,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A dedicated Aspiring software developer with a passion for creating innovative solutions 
-            and a keen interest in emerging technologies.
+            Building the next generation of intelligent software through backend engineering and applied AI.
           </p>
         </div>
 

@@ -3,6 +3,22 @@ import { Calendar, MapPin, TrendingUp } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      title: "AI Intern",
+      company: "SecureThings.ai",
+      location: "Bengaluru, India",
+      period: "January 2026 - Present",
+      type: "Internship",
+      achievements: [
+        "Built a domain-specific LLM assistant using Llama-3.1 with a Retrieval-Augmented Generation (RAG) pipeline for cybersecurity knowledge retrieval.",
+        "Applied Threat Analysis and Risk Assessment (TARA) methodology in compliance with ISO/SAE 21434 for automotive systems.",
+        "Worked on Item Definition for automotive ECUs, identifying system scope, assets,interfaces, trust boundaries, and dependencies.",
+        "Executed TARA activities for an OEM-level automotive cybersecurity engagement with Tata Motors, including damage scenario analysis, threat scenario identification, and cybersecurity requirement derivation.",
+        "Developed a Python-based solution to automatically extract structured tables from image-based technical documents, reducing manual documentation effort by ~60%."
+      ],
+      tech: ["Python","Generative AI", "PyTorch", "LLM", "RAG","Cybersecurity"],
+      color: "border-l-blue-500"
+    },
+    {
       title: "Machine Learning Intern",
       company: "Propeller Technologies",
       location: "Trichy, India",
@@ -15,7 +31,7 @@ const Experience = () => {
       ],
       tech: ["Python","Computer Vision", "PyTorch", "OpenCV", "YOLOv8"," Faster R-CNN"],
       color: "border-l-blue-500"
-    },
+    }
   ];
 
   // const stats = [

@@ -38,7 +38,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl font-medium text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Backend Developer | AI Engineer
+            AI Engineer | Backend Developer 
           </h2>
 
           {/* Introduction */}
